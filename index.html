@@ -233,6 +233,39 @@
         background: var(--accent-color);
     }
 
+    .side-nav {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60px;
+        height: 60px;
+        background: var(--card-bg);
+        border: 1px solid var(--border-glass);
+        backdrop-filter: blur(20px);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 1000;
+        font-size: 1.5rem;
+        color: var(--text-light);
+    }
+
+    .side-nav:hover {
+        background: var(--accent-color);
+        transform: translateY(-50%) scale(1.1);
+    }
+
+    .side-nav.prev {
+        left: 30px;
+    }
+
+    .side-nav.next {
+        right: 30px;
+    }
+
     .slide-number {
         position: absolute;
         top: 30px;
@@ -306,12 +339,26 @@
         .content-grid {
             grid-template-columns: 1fr;
         }
+        
+        .side-nav {
+            width: 50px;
+            height: 50px;
+            font-size: 1.2rem;
+        }
+        
+        .side-nav.prev {
+            left: 15px;
+        }
+        
+        .side-nav.next {
+            right: 15px;
+        }
     }
 </style>
-</head> <body> <div class="deck-container"> <!-- Slide 1: Title --> <div class="slide active"> <div class="slide-number">1 / 17</div> <div class="logo"> <div class="cube"> <div class="cube-face front"></div> <div class="cube-face back"></div> <div class="cube-face right"></div> <div class="cube-face left"></div> <div class="cube-face top"></div> <div class="cube-face bottom"></div> <div class="red-ball"></div> </div> </div> <h1>The 3D Model Matrix Co.</h1> <p class="subtitle">Bringing Concepts to Life Through Immersive 3D Learning</p> <p style="font-size: 1.1rem; color: var(--text-gray); margin-top: 2rem;"> Transforming Education with AI-Native Gaming Experiences </p> <p style="font-size: 1rem; color: var(--text-gray); margin-top: 1rem;"> Founded 2025 | Seed Stage | Educational Gaming </p> </div>
+</head> <body> <div class="deck-container"> <!-- Slide 1: Title --> <div class="slide active"> <div class="slide-number">1 / 12</div> <div class="logo"> <div class="cube"> <div class="cube-face front"></div> <div class="cube-face back"></div> <div class="cube-face right"></div> <div class="cube-face left"></div> <div class="cube-face top"></div> <div class="cube-face bottom"></div> <div class="red-ball"></div> </div> </div> <h1>The 3D Model Matrix Co.</h1> <p class="subtitle">Bringing Concepts to Life Through Immersive 3D Learning</p> <p style="font-size: 1.1rem; color: var(--text-gray); margin-top: 2rem;"> Transforming Education with AI-Native Gaming Experiences </p> <p style="font-size: 1rem; color: var(--text-gray); margin-top: 1rem;"> Founded 2025 | Seed Stage | Educational Gaming </p> </div>
     <!-- Slide 2: The Problem -->
     <div class="slide">
-        <div class="slide-number">2 / 17</div>
+        <div class="slide-number">2 / 12</div>
         <h2>The Problem</h2>
         <h3>Education is Stuck in 2D While Concepts are 3D</h3>
         
@@ -340,7 +387,7 @@
 
     <!-- Slide 3: Our Solution -->
     <div class="slide">
-        <div class="slide-number">3 / 17</div>
+        <div class="slide-number">3 / 12</div>
         <h2>Our Solution</h2>
         <h3>AI-Native 3D Gaming That Makes Complex Concepts Tangible</h3>
         
@@ -370,7 +417,7 @@
 
     <!-- Slide 4: Why Now -->
     <div class="slide">
-        <div class="slide-number">4 / 17</div>
+        <div class="slide-number">4 / 12</div>
         <h2>Why Now?</h2>
         <h3>Three Massive Trends Are Converging</h3>
         
@@ -402,7 +449,7 @@
 
     <!-- Slide 5: Model Matrix Introduction -->
     <div class="slide">
-        <div class="slide-number">5 / 17</div>
+        <div class="slide-number">5 / 12</div>
         <h2>Our Flagship Game - Model Matrix</h2>
         <div style="max-width: 800px; margin: 0 auto;">
             <blockquote style="font-size: 1.3rem; font-style: italic; color: var(--text-gray); margin: 2rem 0; border-left: 4px solid var(--accent-color); padding-left: 1rem;">
@@ -434,7 +481,7 @@
 
     <!-- Slide 6: Live Demo -->
     <div class="slide">
-        <div class="slide-number">6 / 17</div>
+        <div class="slide-number">6 / 12</div>
         <h2>Model Matrix - Live Demo</h2>
         <h3>Experience the Future of 3D Learning</h3>
         
@@ -455,7 +502,7 @@
 
     <!-- Slide 7: Market Opportunity -->
     <div class="slide">
-        <div class="slide-number">7 / 17</div>
+        <div class="slide-number">7 / 12</div>
         <h2>Market Opportunity</h2>
         <h3>Riding Multiple Massive Markets</h3>
         
@@ -495,7 +542,7 @@
 
     <!-- Slide 8: Business Model -->
     <div class="slide">
-        <div class="slide-number">8 / 17</div>
+        <div class="slide-number">8 / 12</div>
         <h2>Business Model</h2>
         <h3>Multiple Revenue Streams, Sustainable Growth</h3>
         
@@ -533,7 +580,7 @@
 
     <!-- Slide 9: Financial Projections -->
     <div class="slide">
-        <div class="slide-number">9 / 17</div>
+        <div class="slide-number">9 / 12</div>
         <h2>Financial Projections</h2>
         <h3>Aggressive Growth Targeting Platform Economics</h3>
         
@@ -610,7 +657,7 @@
 
     <!-- Slide 10: Funding Request -->
     <div class="slide">
-        <div class="slide-number">10 / 17</div>
+        <div class="slide-number">10 / 12</div>
         <h2>Funding Request</h2>
         <div style="text-align: center; margin: 2rem 0;">
             <div class="metric" style="font-size: 4rem;">$500,000</div>
@@ -644,7 +691,7 @@
 
     <!-- Slide 11: Investment Thesis -->
     <div class="slide">
-        <div class="slide-number">11 / 17</div>
+        <div class="slide-number">11 / 12</div>
         <h2>Investment Thesis</h2>
         <h3>Capturing the Future of 3D Education</h3>
         
@@ -678,7 +725,7 @@
 
     <!-- Slide 12: Thank You / Next Steps -->
     <div class="slide">
-        <div class="slide-number">12 / 17</div>
+        <div class="slide-number">12 / 12</div>
         <div class="logo">
             <div class="cube">
                 <div class="cube-face front"></div>
@@ -704,4 +751,84 @@
             </div>
             <div class="card">
                 <h4 style="color: var(--accent-color);">Investment Timeline:</h4>
-                <ul
+                <ul class="bullet-points">
+                    <li>Due diligence: 30 days</li>
+                    <li>Funding close: 60 days</li>
+                    <li>Product launch: 90 days post-funding</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <p style="font-size: 1.2rem; color: var(--text-gray);">
+                Contact: [Founder Name] | [Email] | [Phone] | [LinkedIn]
+            </p>
+        </div>
+
+        <blockquote style="font-size: 1.2rem; font-style: italic; color: var(--accent-color); margin: 2rem 0; text-align: center;">
+            "The question isn't whether immersive 3D education will happen - it's whether you want to own the platform that makes it possible."
+        </blockquote>
+    </div>
+</div>
+
+<!-- Navigation -->
+<div class="navigation">
+    <button class="nav-btn" onclick="previousSlide()">← Previous</button>
+    <button class="nav-btn" onclick="nextSlide()">Next →</button>
+</div>
+
+<!-- Side Navigation (Kindle-style) -->
+<div class="side-nav prev" onclick="previousSlide()" title="Previous slide">‹</div>
+<div class="side-nav next" onclick="nextSlide()" title="Next slide">›</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    function showSlide(n) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (n + totalSlides) % totalSlides;
+        slides[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    function previousSlide() {
+        showSlide(currentSlide - 1);
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+            nextSlide();
+        } else if (e.key === 'ArrowLeft') {
+            previousSlide();
+        }
+    });
+
+    // Touch navigation for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    document.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    document.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        if (touchEndX < touchStartX - 50) {
+            nextSlide();
+        }
+        if (touchEndX > touchStartX + 50) {
+            previousSlide();
+        }
+    }
+</script>
+</body> </html>
